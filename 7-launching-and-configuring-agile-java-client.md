@@ -18,7 +18,7 @@ To launch the Agile Java Client:
 
 1. Open your browser and type the following:
 
-   http://&lt;hostname&gt;.&lt;domain&gt;:&lt;port&gt;/JavaClient/start.html
+   `http://<hostname>.<domain>:<port>/JavaClient/start.html`
 
    For example, the URL might look something like this:
 
@@ -67,15 +67,15 @@ To extract and modify the Java Client JNLP files:
 
    jnlp:
 
-   &lt;jnlp spec="1.0+" codebase="http://&lt;proxy/loadbalancer&gt;.&lt;domain&gt;:&lt;port&gt;/JavaClient"&gt;
+   `<jnlp spec="1.0+" codebase="http://<proxy/loadbalancer>.<domain>:<port>/JavaClient">`
 
    serverURL:
 
-   &lt;argument&gt;serverURL=&lt;protocol&gt;://&lt;appserver/loadbalancer&gt;.&lt;domain&gt;:&lt;port&gt;
+   `<argument>serverURL=<protocol>://<appserver/loadbalancer>.<domain>:<port>`
 
    webserverName:
 
-   &lt;argument&gt;webserverName=&lt;proxy/loadbalancer&gt;.&lt;domain&gt;:&lt;port&gt;&lt;/argument&gt;
+   `<argument>webserverName=<proxy/loadbalancer>.<domain>:<port></argument>`
 
    where
 
@@ -95,7 +95,7 @@ To extract and modify the Java Client JNLP files:
 
    jnlp:
 
-   &lt;jnlp spec="1.0+" codebase="http://&lt;proxy/loadbalancer&gt;.&lt;domain&gt;:&lt;port&gt;/JavaClient"&gt;
+   `<jnlp spec="1.0+" codebase="http://<proxy/loadbalancer>.<domain>:<port>/JavaClient">`
 
    where
 
@@ -113,7 +113,7 @@ To extract and modify the Java Client JNLP files:
 
     jnlp:
 
-    &lt;jnlp spec="1.0+" codebase="http://&lt;proxy/loadbalancer&gt;.&lt;domain&gt;:&lt;port&gt;/JavaClient"&gt;
+    `<jnlp spec="1.0+" codebase="http://<proxy/loadbalancer>.<domain>:<port>/JavaClient">`
 
     where
 
