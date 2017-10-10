@@ -1,23 +1,13 @@
 # 7 Launching and Configuring Agile Java Client
 
-
-
 ## 7.1 Agile Java Client Requirements
 
 You must have a Java Runtime Environment \(JRE\) or Java Development Kit \(JDK\) version 8 or later installed on your computer to use Agile Java Client.
 
 The server-side files required for Agile Java Client are installed with the Agile Application Server.
 
-  
-
-
 | Note: The Agile PLM administrator must send users the URL to connect to the Agile Java Client. In addition, there is a new Java client access privilege that must be granted for users to use the Java client. |
 | :--- |
-
-
-  
-
-
 
 
 ## 7.2 Installing the Agile Java Client
@@ -28,27 +18,21 @@ To launch the Agile Java Client:
 
 1. Open your browser and type the following:
 
-   [http://&lt;hostname&gt;.&lt;domain&gt;:&lt;port&gt;/JavaClient/start.html](http://%3chostname%3e.%3cdomain%3e:%3cport%3e/JavaClient/start.html)
+   http://&lt;hostname&gt;.&lt;domain&gt;:&lt;port&gt;/JavaClient/start.html
 
    For example, the URL might look something like this:
 
-   [`http://plmserver.mycompany.com/JavaClient/start.html`](http://plmserver.mycompany.com/JavaClient/start.html)
+   `http://plmserver.mycompany.com/JavaClient/start.html`
 
-2. 2. Click Launch.
-
+2. Click Launch.
    Java Web Start proceeds to download Java Client files and install them on your computer. This may take a few minutes.
 
-3. 3. If a Security Warning dialog box appears, click Start.
-
-4. 4. If the Agile 9.3.4 Desktop Integration dialog box appears, click Yes to integrate the Agile Java Client with your desktop.
-
+3. If a Security Warning dialog box appears, click Start.
+4. If the Agile 9.3.4 Desktop Integration dialog box appears, click Yes to integrate the Agile Java Client with your desktop.
    You are prompted to log in to the Agile server.
 
-5. 5. Enter your Agile PLM username and password, and then click OK.
-
+5. Enter your Agile PLM username and password, and then click OK.
    The main Agile Java Client window opens.
-
-
 
 ## 7.3 Reconfiguring Java Client JNLP Files
 
@@ -61,8 +45,6 @@ When you install the Agile Application Server, the following three JNLP files ar
 * custom.jnlp
 
 A JNLP file is an XML document that describes a Java application to be launched by Java Web Start. Ordinarily, the JNLP files are configured correctly during installation of Agile PLM. However, if you have an application server cluster and are unable to start Java Client and download its classes, you may need to reconfigure the JNLP files on the Administration server to use the correct URLs.
-
-
 
 ## 7.4 Modifying the JNLP Files
 
@@ -84,7 +66,7 @@ To extract and modify the Java Client JNLP files:
 
    jnlp:
 
-   &lt;jnlp spec="1.0+" codebase="[http://&lt;proxy/loadbalancer&gt;.&lt;domain&gt;:&lt;port&gt;/JavaClient](http://%3cproxy/loadbalancer%3e.%3cdomain%3e:%3cport%3e/JavaClient)"&gt;
+   &lt;jnlp spec="1.0+" codebase="http://&lt;proxy/loadbalancer&gt;.&lt;domain&gt;:&lt;port&gt;/JavaClient"&gt;
 
    serverURL:
 
@@ -112,7 +94,7 @@ To extract and modify the Java Client JNLP files:
 
    jnlp:
 
-   &lt;jnlp spec="1.0+" codebase="[http://&lt;proxy/loadbalancer&gt;.&lt;domain&gt;:&lt;port&gt;/JavaClient](http://%3cproxy/loadbalancer%3e.%3cdomain%3e:%3cport%3e/JavaClient)"&gt;
+   &lt;jnlp spec="1.0+" codebase="http://&lt;proxy/loadbalancer&gt;.&lt;domain&gt;:&lt;port&gt;/JavaClient"&gt;
 
    where
 
@@ -130,7 +112,7 @@ To extract and modify the Java Client JNLP files:
 
     jnlp:
 
-    &lt;jnlp spec="1.0+" codebase="[http://&lt;proxy/loadbalancer&gt;.&lt;domain&gt;:&lt;port&gt;/JavaClient](http://%3cproxy/loadbalancer%3e.%3cdomain%3e:%3cport%3e/JavaClient)"&gt;
+    &lt;jnlp spec="1.0+" codebase="http://&lt;proxy/loadbalancer&gt;.&lt;domain&gt;:&lt;port&gt;/JavaClient"&gt;
 
     where
 
@@ -145,8 +127,6 @@ To extract and modify the Java Client JNLP files:
 13. Change to the AGILE\_HOME\Install\bin directory and run the RepackJNLPFiles script to replace the JNLP files into the application.ear file.
 
 14. Start the Agile Application Server.
-
-
 
 ## 7.5 Configuring the JNLP MIME Type on UNIX
 
