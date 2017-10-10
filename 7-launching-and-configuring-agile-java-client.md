@@ -24,14 +24,15 @@ To launch the Agile Java Client:
 
    `http://plmserver.mycompany.com/JavaClient/start.html`
 
-2. Click Launch.
+2. Click Launch.  
    Java Web Start proceeds to download Java Client files and install them on your computer. This may take a few minutes.
 
 3. If a Security Warning dialog box appears, click Start.
-4. If the Agile 9.3.4 Desktop Integration dialog box appears, click Yes to integrate the Agile Java Client with your desktop.
+
+4. If the Agile 9.3.4 Desktop Integration dialog box appears, click Yes to integrate the Agile Java Client with your desktop.  
    You are prompted to log in to the Agile server.
 
-5. Enter your Agile PLM username and password, and then click OK.
+5. Enter your Agile PLM username and password, and then click OK.  
    The main Agile Java Client window opens.
 
 ## 7.3 Reconfiguring Java Client JNLP Files
